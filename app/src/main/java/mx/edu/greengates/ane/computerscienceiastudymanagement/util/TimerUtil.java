@@ -1,3 +1,5 @@
+package mx.edu.greengates.ane.computerscienceiastudymanagement.util;
+
 public class TimerUtil {
 
     long startTime;

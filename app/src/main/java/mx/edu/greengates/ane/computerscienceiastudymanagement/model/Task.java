@@ -1,3 +1,4 @@
+package mx.edu.greengates.ane.computerscienceiastudymanagement.model;
 import java.io.Serializable;
 import java.util.Date;
 

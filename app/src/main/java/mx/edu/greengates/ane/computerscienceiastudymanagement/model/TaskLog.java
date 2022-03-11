@@ -1,3 +1,5 @@
+package mx.edu.greengates.ane.computerscienceiastudymanagement.model;
+
 import java.io.Serializable;
 
 public class TaskLog implements Serializable {

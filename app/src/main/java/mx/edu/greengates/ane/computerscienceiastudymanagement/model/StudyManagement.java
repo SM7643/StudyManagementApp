@@ -1,9 +1,13 @@
+package mx.edu.greengates.ane.computerscienceiastudymanagement.model;
+
+import android.app.Application;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class StudyManagement implements Serializable {
+public class StudyManagement extends Application implements Serializable {
 
     private List<Reward> rewards;
     private List<Task> tasks;
@@ -11,6 +15,14 @@ public class StudyManagement implements Serializable {
 
     private int progress;
     private long timer;
+
+    public StudyManagement(){
+        this.rewards = new ArrayList<>();
+        this.tasks = new ArrayList<>();
+        this.progress = 0;
+        this.timer = 0;
+        this.taskLogs = new ArrayList<>();
+    }
 
     public StudyManagement(List<Reward> rewards, List<Task> tasks, int progress, long timer) {
         this.rewards = rewards;

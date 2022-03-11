@@ -1,4 +1,8 @@
+package mx.edu.greengates.ane.computerscienceiastudymanagement.persistence;
+
 import java.io.*;
+
+import mx.edu.greengates.ane.computerscienceiastudymanagement.model.StudyManagement;
 
 public class FileStorageImpl implements IStorage {
 

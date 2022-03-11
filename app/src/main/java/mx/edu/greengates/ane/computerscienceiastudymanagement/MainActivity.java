@@ -3,6 +3,7 @@ package mx.edu.greengates.ane.computerscienceiastudymanagement;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import mx.edu.greengates.ane.computerscienceiastudymanagement.model.StudyManagement;
 
 public class MainActivity extends AppCompatActivity {
 
