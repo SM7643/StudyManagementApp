@@ -2,6 +2,8 @@ package mx.edu.greengates.ane.computerscienceiastudymanagement.model;
 
 import android.app.Application;
 
+package mx.edu.greengates.ane.computerscienceiastudymanagement.model;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;

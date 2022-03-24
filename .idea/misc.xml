@@ -3,14 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/ceila/AndroidStudioProjects/ComputerScienceIAStudyManagement/app/src/main/res/layout/activity_add_task.xml" value="1.0" />
-        <entry key="..\:/Users/ceila/AndroidStudioProjects/ComputerScienceIAStudyManagement/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/ceila/AndroidStudioProjects/ComputerScienceIAStudyManagement/app/src/main/res/layout/activity_setting.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/ceila/AndroidStudioProjects/ComputerScienceIAStudyManagement/app/src/main/res/layout/activity_study.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/dvazquez/AndroidStudioProjects/StudyManagementApp/app/src/main/res/layout/activity_add_task.xml" value="0.1" />
-        <entry key="..\:/Users/dvazquez/AndroidStudioProjects/StudyManagementApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/dvazquez/AndroidStudioProjects/StudyManagementApp/app/src/main/res/layout/activity_setting.xml" value="0.22" />
-        <entry key="..\:/Users/dvazquez/AndroidStudioProjects/StudyManagementApp/app/src/main/res/layout/activity_study.xml" value="0.16" />
+        <entry key="..\:/Users/ceila/AndroidStudioProjects/ComputerScienceIAStudyManagement/app/src/main/res/layout/activity_add_task.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/ceila/AndroidStudioProjects/ComputerScienceIAStudyManagement/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/ceila/AndroidStudioProjects/ComputerScienceIAStudyManagement/app/src/main/res/layout/activity_setting.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/ceila/AndroidStudioProjects/ComputerScienceIAStudyManagement/app/src/main/res/layout/activity_study.xml" value="0.22447916666666667" />
       </map>
     </option>
   </component>

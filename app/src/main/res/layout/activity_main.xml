@@ -8,40 +8,25 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:fontFamily="casual"
-        android:text="@string/study_management"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/tvUpTasks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="30dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/upcoming_tasks"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+        tools:layout_editor_absoluteY="132dp" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="300dp"
         android:layout_height="180dp"
-        android:layout_marginTop="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+        tools:layout_editor_absoluteY="172dp">
 
         <RadioButton
             android:id="@+id/rb1"
@@ -64,9 +49,12 @@
         android:id="@+id/btStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:layout_marginStart="65dp"
+        android:layout_marginTop="30dp"
+        android:onClick="onStart"
         android:text="@string/start"
+        app:layout_constraintEnd_toStartOf="@+id/btAdd"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
@@ -76,8 +64,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="65dp"
+        android:onClick="onAdd"
         android:text="@string/add"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btStart"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <TextView
