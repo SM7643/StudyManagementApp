@@ -1,108 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#98D98E"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tvUpTasks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/upcoming_tasks"
         android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="132dp" />
+        android:textStyle="bold" />
 
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="300dp"
-        android:layout_height="180dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="172dp">
-
-        <RadioButton
-            android:id="@+id/rb1"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            tools:ignore="DuplicateSpeakableTextCheck" />
-
-        <RadioButton
-            android:id="@+id/rb2"
-            android:layout_width="match_parent"
-            android:layout_height="60dp" />
-
-        <RadioButton
-            android:id="@+id/rb3"
-            android:layout_width="match_parent"
-            android:layout_height="60dp" />
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/btStart"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="30dp"
-        android:onClick="onStart"
-        android:text="@string/start"
-        app:layout_constraintEnd_toStartOf="@+id/btAdd"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        android:layout_marginTop="20dp">
 
-    <Button
-        android:id="@+id/btAdd"
-        android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/cB1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cB2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cB3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cB4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cB5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="65dp"
-        android:onClick="onAdd"
-        android:text="@string/add"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btStart"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btStart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:onClick="onStart"
+            android:text="@string/start" />
+
+        <Button
+            android:id="@+id/btAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="50dp"
+            android:layout_weight="1"
+            android:onClick="onAdd"
+            android:text="@string/add" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tvReward"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/reward"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        android:textSize="20sp" />
 
     <ProgressBar
-        android:id="@+id/progressBar"
+        android:id="@+id/progressBar2"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="360dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvReward" />
+        android:layout_marginTop="20dp" />
 
     <TextView
         android:id="@+id/tvTtw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/time_this_week"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvReward" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</LinearLayout>

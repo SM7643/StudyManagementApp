@@ -39,7 +39,7 @@
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/eTTask"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -57,6 +57,12 @@
                 android:fontFamily="sans-serif-black"
                 android:text="@string/due_date"
                 android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tVDD2"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center" />
 
             <CalendarView
                 android:id="@+id/calendarView"
@@ -79,7 +85,7 @@
                 tools:layout_editor_absoluteY="222dp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/eTHours"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

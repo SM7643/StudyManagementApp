@@ -27,13 +27,14 @@ public class MainActivity extends AppCompatActivity {
         btnStart.setOnClickListener((View.OnClickListener) this);
     }
 
-    public void onClick(View v) {
-        if (v == btnAdd) {
+    public void onClick(View view) {
+        if (view == btnAdd) {
             Intent myIntent = new Intent(MainActivity.this, AddTaskActivity.class);
             myIntent.putExtra("progress", 50); //Optional parameters
             MainActivity.this.startActivity(myIntent);
         }
-        if (v == btnStart) {
+        if (view
+                == btnStart) {
             Intent myIntent = new Intent(MainActivity.this, AddTaskActivity.class);
             myIntent.putExtra("progress", 50); //Optional parameters
             MainActivity.this.startActivity(myIntent);
